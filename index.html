@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="google-site-verification" content="IRHRfLiihyHKPN-Lox4a3GaeW7s5J2oLbB11uaEJkJ8" />
+<head>
+  <meta name="google-site-verification" content="IRHRfLiihyHKPN-Lox4a3GaeW7s5J2oLbB11uaEJkJ8" />
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Foodie Guest Posts | Easy Recipes & Food Guides</title>
-
-  <meta name="description"
-        content="Discover easy recipes, cooking tips, food guides and delicious meal ideas at Foodie Guest Posts.">
-
-  <meta name="keywords"
-        content="recipes, easy recipes, food blog, cooking tips, dinner recipes, breakfast recipes, food guides">
-
+  <title>Foodie Guest Posts | Easy Recipes, 15-Minute Meals & Food Guides</title>
+  <meta name="description" content="Discover easy recipes, 15-minute quick dinners, cooking tips, food guides and delicious meal ideas at Foodie Guest Posts.">
+  <meta name="keywords" content="recipes, easy recipes, quick 15-minute dinner ideas, food blog, cooking tips, dinner recipes, breakfast recipes, food guides">
   <meta name="author" content="Foodie Guest Posts">
 
-  <meta property="og:title" content="Foodie Guest Posts">
-  <meta property="og:description"
-        content="Simple recipes. Big flavour. Discover delicious food ideas and cooking guides.">
+  <meta property="og:title" content="Foodie Guest Posts - Simple Recipes. Big Flavour.">
+  <meta property="og:description" content="Discover delicious 15-minute food ideas, guest posts, and everyday cooking guides.">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
-
     /* =========================
-       GLOBAL
+       GLOBAL STYLES
     ========================= */
-
     * {
       margin: 0;
       padding: 0;
@@ -59,8 +50,7 @@
       color: inherit;
     }
 
-    button,
-    input {
+    button, input {
       font-family: inherit;
     }
 
@@ -70,7 +60,7 @@
     }
 
     .section {
-      padding: 80px 0;
+      padding: 75px 0;
     }
 
     .section-title {
@@ -90,12 +80,13 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 13px 22px;
+      padding: 13px 24px;
       border-radius: 999px;
       border: none;
       cursor: pointer;
       font-weight: 700;
       transition: 0.25s ease;
+      gap: 8px;
     }
 
     .btn-primary {
@@ -121,7 +112,6 @@
     /* =========================
        TOP BAR
     ========================= */
-
     .topbar {
       background: #29231f;
       color: white;
@@ -144,7 +134,6 @@
     /* =========================
        HEADER
     ========================= */
-
     header {
       background: rgba(255, 250, 245, 0.97);
       border-bottom: 1px solid #eee2d9;
@@ -177,13 +166,14 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
       list-style: none;
     }
 
     .nav-links a {
       font-weight: 600;
       color: #413a35;
+      transition: 0.2s;
     }
 
     .nav-links a:hover {
@@ -201,7 +191,6 @@
     /* =========================
        HERO
     ========================= */
-
     .hero {
       padding: 75px 0;
       background:
@@ -227,8 +216,8 @@
 
     .hero h1 {
       font-family: "Playfair Display", serif;
-      font-size: clamp(48px, 6vw, 78px);
-      line-height: 1.02;
+      font-size: clamp(44px, 5.5vw, 72px);
+      line-height: 1.05;
       margin-bottom: 22px;
     }
 
@@ -254,7 +243,7 @@
     }
 
     .hero-image img {
-      height: 520px;
+      height: 500px;
       object-fit: cover;
       border-radius: 30px;
       box-shadow: 0 25px 70px rgba(52, 36, 25, 0.18);
@@ -283,7 +272,6 @@
     /* =========================
        CATEGORIES
     ========================= */
-
     .categories {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -324,9 +312,8 @@
     }
 
     /* =========================
-       SEARCH
+       SEARCH & FILTERS
     ========================= */
-
     .search-area {
       background: #f5ebe3;
       padding: 35px 0;
@@ -335,12 +322,11 @@
     .search-box {
       max-width: 700px;
       margin: auto;
-      position: relative;
     }
 
     .search-box input {
       width: 100%;
-      padding: 17px 22px;
+      padding: 17px 24px;
       border: 1px solid #e1d3c8;
       border-radius: 999px;
       outline: none;
@@ -353,10 +339,6 @@
       box-shadow: 0 0 0 4px rgba(232,93,63,0.1);
     }
 
-    /* =========================
-       FILTER BUTTONS
-    ========================= */
-
     .filters {
       display: flex;
       gap: 10px;
@@ -367,11 +349,12 @@
     .filter-btn {
       border: 1px solid #dfd2c9;
       background: white;
-      padding: 10px 17px;
+      padding: 10px 20px;
       border-radius: 999px;
       cursor: pointer;
       font-weight: 600;
       color: #514942;
+      transition: 0.2s;
     }
 
     .filter-btn.active,
@@ -382,9 +365,8 @@
     }
 
     /* =========================
-       RECIPE CARDS
+       RECIPE CARDS GRID
     ========================= */
-
     .recipe-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -397,6 +379,8 @@
       overflow: hidden;
       border: 1px solid #eee1d8;
       transition: 0.3s;
+      display: flex;
+      flex-direction: column;
     }
 
     .recipe-card:hover {
@@ -439,7 +423,10 @@
     }
 
     .recipe-content {
-      padding: 20px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
 
     .recipe-category {
@@ -452,14 +439,16 @@
 
     .recipe-content h3 {
       font-family: "Playfair Display", serif;
-      font-size: 25px;
-      margin: 5px 0 8px;
+      font-size: 23px;
+      line-height: 1.3;
+      margin: 6px 0 10px;
     }
 
     .recipe-content p {
       color: #756c66;
       font-size: 14px;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
+      flex-grow: 1;
     }
 
     .recipe-meta {
@@ -472,9 +461,8 @@
     }
 
     /* =========================
-       FEATURED GUIDE
+       FOOD GUIDE SECTION
     ========================= */
-
     .guide {
       background: #29231f;
       color: white;
@@ -488,14 +476,14 @@
     }
 
     .guide-image img {
-      height: 470px;
+      height: 450px;
       object-fit: cover;
       border-radius: 25px;
     }
 
     .guide h2 {
       font-family: "Playfair Display", serif;
-      font-size: 48px;
+      font-size: 44px;
       line-height: 1.1;
       margin-bottom: 18px;
     }
@@ -523,65 +511,71 @@
     }
 
     /* =========================
-       GUEST POST
+       ABOUT & CONTACT SECTION (With smarthomep123@gmail.com)
     ========================= */
-
-    .guest-post {
+    .about-contact {
       background: #fff0e8;
+      border-top: 1px solid #efd9ce;
+      border-bottom: 1px solid #efd9ce;
     }
 
-    .guest-grid {
+    .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 45px;
       align-items: center;
     }
 
-    .guest-post h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 46px;
-      line-height: 1.1;
-      margin-bottom: 18px;
-    }
-
-    .guest-post p {
-      color: #6d625b;
-      margin-bottom: 20px;
-    }
-
-    .guest-box {
+    .contact-card {
       background: white;
       padding: 35px;
       border-radius: 25px;
       border: 1px solid #efd9ce;
+      box-shadow: 0 15px 40px rgba(52, 36, 25, 0.08);
     }
 
-    .guest-box h3 {
+    .contact-card h3 {
       font-family: "Playfair Display", serif;
-      font-size: 27px;
+      font-size: 28px;
       margin-bottom: 12px;
+      color: #29231f;
     }
 
-    .guest-box ul {
-      list-style: none;
+    .email-box {
+      background: #fffaf5;
+      border: 2px dashed #e85d3f;
+      padding: 20px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
       margin: 20px 0;
     }
 
-    .guest-box li {
-      margin-bottom: 12px;
+    .email-box i {
+      font-size: 30px;
+      color: #e85d3f;
     }
 
-    .guest-box li::before {
-      content: "✓";
+    .email-box span {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #756c66;
+      font-weight: 700;
+    }
+
+    .email-box a {
       color: #e85d3f;
-      font-weight: bold;
-      margin-right: 9px;
+      font-size: 18px;
+      font-weight: 700;
+      word-break: break-all;
     }
 
     /* =========================
        NEWSLETTER
     ========================= */
-
     .newsletter {
       background: #e85d3f;
       color: white;
@@ -600,7 +594,7 @@
     }
 
     .newsletter p {
-      opacity: 0.9;
+      opacity: 0.95;
       margin-bottom: 25px;
     }
 
@@ -615,8 +609,9 @@
       flex: 1;
       border: none;
       border-radius: 999px;
-      padding: 15px 20px;
+      padding: 15px 22px;
       outline: none;
+      font-size: 15px;
     }
 
     .newsletter-form button {
@@ -624,19 +619,23 @@
       color: white;
       border: none;
       border-radius: 999px;
-      padding: 0 25px;
+      padding: 0 28px;
       cursor: pointer;
       font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .newsletter-form button:hover {
+      background: #151210;
     }
 
     /* =========================
        FOOTER
     ========================= */
-
     footer {
       background: #29231f;
       color: white;
-      padding: 55px 0 25px;
+      padding: 60px 0 25px;
     }
 
     .footer-grid {
@@ -650,15 +649,22 @@
       font-family: "Playfair Display", serif;
       font-size: 28px;
       margin-bottom: 12px;
+      color: #e85d3f;
+    }
+
+    .footer-logo span {
+      color: white;
     }
 
     .footer-text {
       color: #bdb2aa;
       max-width: 320px;
+      font-size: 14px;
     }
 
     footer h4 {
       margin-bottom: 15px;
+      font-size: 16px;
     }
 
     footer ul {
@@ -671,10 +677,12 @@
 
     footer li a {
       color: #bdb2aa;
+      font-size: 14px;
+      transition: 0.2s;
     }
 
     footer li a:hover {
-      color: white;
+      color: #ffd8ca;
     }
 
     .copyright {
@@ -685,45 +693,24 @@
       text-align: center;
     }
 
-    /* =========================
-       NO RESULTS
-    ========================= */
-
     .no-results {
       display: none;
       text-align: center;
-      padding: 30px;
+      padding: 40px;
       color: #756c66;
     }
 
     /* =========================
        RESPONSIVE
     ========================= */
-
     @media (max-width: 900px) {
-
-      .hero-grid,
-      .guide-grid,
-      .guest-grid {
+      .hero-grid, .guide-grid, .contact-grid {
         grid-template-columns: 1fr;
       }
-
-      .hero-image {
-        order: -1;
-      }
-
-      .categories {
+      .hero-image { order: -1; }
+      .categories, .recipe-grid, .footer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-
-      .recipe-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       .nav-links {
         position: absolute;
         top: 76px;
@@ -735,75 +722,18 @@
         padding: 25px;
         border-bottom: 1px solid #eee2d9;
       }
-
-      .nav-links.show {
-        display: flex;
-      }
-
-      .menu-btn {
-        display: block;
-      }
+      .nav-links.show { display: flex; }
+      .menu-btn { display: block; }
     }
 
     @media (max-width: 600px) {
-
-      .section {
-        padding: 60px 0;
-      }
-
-      .topbar-inner {
-        text-align: center;
-        justify-content: center;
-      }
-
-      .topbar-inner span {
-        display: none;
-      }
-
-      .hero {
-        padding: 55px 0;
-      }
-
-      .hero h1 {
-        font-size: 48px;
-      }
-
-      .hero-image img {
-        height: 390px;
-      }
-
-      .hero-card {
-        left: 15px;
-      }
-
-      .section-title {
-        font-size: 35px;
-      }
-
-      .categories,
-      .recipe-grid {
+      .categories, .recipe-grid, .footer-grid {
         grid-template-columns: 1fr;
       }
-
-      .newsletter-form {
-        flex-direction: column;
-      }
-
-      .newsletter-form button {
-        padding: 14px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .guide h2,
-      .guest-post h2,
-      .newsletter h2 {
-        font-size: 37px;
-      }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-form button { padding: 14px; }
+      .section-title, .hero h1 { font-size: 36px; }
     }
-
   </style>
 </head>
 
@@ -812,1028 +742,474 @@
   <!-- =========================
        TOP BAR
   ========================= -->
-
   <div class="topbar">
     <div class="container topbar-inner">
-      <span>Fresh recipes, food guides & cooking inspiration</span>
-      <a href="#guest-post">Want to contribute? Submit a guest post →</a>
+      <span>Fresh recipes, 15-minute meals & cooking guides</span>
+      <a href="#about-contact">Guest Post & Collaboration: smarthomep123@gmail.com →</a>
     </div>
   </div>
-
 
   <!-- =========================
        HEADER
   ========================= -->
-
   <header>
     <div class="container nav">
-
       <a href="#" class="logo">
         Foodie <span>Guest Posts</span>
       </a>
 
-      <button class="menu-btn" id="menuBtn">
-        ☰
-      </button>
+      <button class="menu-btn" id="menuBtn">☰</button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#recipes">Recipes</a></li>
         <li><a href="#categories">Categories</a></li>
         <li><a href="#guides">Food Guides</a></li>
-        <li><a href="#guest-post">Guest Posts</a></li>
-        <li>
-          <a href="#newsletter" class="btn btn-primary">
-            Newsletter
-          </a>
-        </li>
+        <li><a href="#about-contact" style="color: #e85d3f; font-weight: 700;">About & Contact</a></li>
+        <li><a href="#newsletter" class="btn btn-primary">Newsletter</a></li>
       </ul>
-
     </div>
   </header>
-
 
   <!-- =========================
        HERO
   ========================= -->
-
   <section class="hero">
-
     <div class="container hero-grid">
-
       <div>
-
-        <div class="eyebrow">
-          Welcome to Foodie Guest Posts
-        </div>
-
-        <h1>
-          Simple recipes.
-          <span>Big flavour.</span>
-        </h1>
-
+        <div class="eyebrow">Welcome to Foodie Guest Posts</div>
+        <h1>Simple recipes. <span>Big flavour.</span></h1>
         <p class="hero-text">
-          Discover delicious recipes, useful cooking tips and food guides
-          made for everyday cooks. Easy ideas, beautiful food and plenty
-          of inspiration for your next meal.
+          Discover quick 15-minute dinners, useful cooking tips and foolproof food guides made for everyday home cooks. Easy ideas and delicious inspiration for your next meal.
         </p>
 
         <div class="hero-buttons">
-          <a href="#recipes" class="btn btn-primary">
-            Explore Recipes
-          </a>
-
-          <a href="#guest-post" class="btn btn-light">
-            Submit a Guest Post
-          </a>
+          <a href="#recipes" class="btn btn-primary">Explore Recipes</a>
+          <a href="#about-contact" class="btn btn-light">Contact & Guest Posts</a>
         </div>
-
       </div>
 
       <div class="hero-image">
-
-        <img
-          src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85"
-          alt="Fresh healthy food"
-        >
-
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Fresh healthy food">
         <div class="hero-card">
-          <strong>Today's inspiration</strong>
-          <small>
-            Creamy pasta with fresh herbs
-          </small>
+          <strong>Today's Inspiration</strong>
+          <small>Creamy Tuscan Garlic Chicken (12 Min)</small>
         </div>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- =========================
        CATEGORIES
   ========================= -->
-
   <section class="section" id="categories">
-
     <div class="container">
-
-      <h2 class="section-title">
-        Browse by category
-      </h2>
-
-      <p class="section-subtitle">
-        Find something delicious for breakfast, lunch, dinner or your next
-        sweet craving.
-      </p>
+      <h2 class="section-title">Browse by category</h2>
+      <p class="section-subtitle">Find something delicious for breakfast, lunch, quick dinners or your next sweet craving.</p>
 
       <div class="categories">
-
         <a href="#recipes" class="category">
-          <img
-            src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=80"
-            alt="Breakfast"
-          >
-
-          <div class="category-overlay">
-            <h3>Breakfast</h3>
-          </div>
+          <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=80" alt="Breakfast">
+          <div class="category-overlay"><h3>Breakfast</h3></div>
         </a>
 
-
         <a href="#recipes" class="category">
-          <img
-            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
-            alt="Lunch"
-          >
-
-          <div class="category-overlay">
-            <h3>Lunch</h3>
-          </div>
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Lunch">
+          <div class="category-overlay"><h3>Lunch</h3></div>
         </a>
 
-
         <a href="#recipes" class="category">
-          <img
-            src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=900&q=80"
-            alt="Dinner"
-          >
-
-          <div class="category-overlay">
-            <h3>Dinner</h3>
-          </div>
+          <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=900&q=80" alt="Dinner">
+          <div class="category-overlay"><h3>Dinner</h3></div>
         </a>
 
-
         <a href="#recipes" class="category">
-          <img
-            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80"
-            alt="Desserts"
-          >
-
-          <div class="category-overlay">
-            <h3>Desserts</h3>
-          </div>
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Desserts">
+          <div class="category-overlay"><h3>Desserts</h3></div>
         </a>
-
       </div>
-
     </div>
-
   </section>
 
-
   <!-- =========================
-       SEARCH
+       SEARCH BAR
   ========================= -->
-
   <section class="search-area">
-
     <div class="container">
-
       <div class="search-box">
-
-        <input
-          type="search"
-          id="searchInput"
-          placeholder="Search recipes... e.g. pasta, chicken, cake"
-        >
-
+        <input type="search" id="searchInput" placeholder="Search delicious recipes... e.g. 15 minute, pasta, chicken, cake">
       </div>
-
     </div>
-
   </section>
 
-
   <!-- =========================
-       RECIPES
+       RECIPES GRID SECTION
   ========================= -->
-
   <section class="section" id="recipes">
-
     <div class="container">
-
-      <h2 class="section-title">
-        Latest recipes
-      </h2>
-
-      <p class="section-subtitle">
-        Easy-to-follow recipes for busy days and relaxed weekends.
-      </p>
-
+      <h2 class="section-title">Latest recipes & meal ideas</h2>
+      <p class="section-subtitle">Easy-to-follow recipes for busy weeknights and relaxed weekends.</p>
 
       <div class="filters">
-
-        <button class="filter-btn active" data-filter="all">
-          All
-        </button>
-
-        <button class="filter-btn" data-filter="breakfast">
-          Breakfast
-        </button>
-
-        <button class="filter-btn" data-filter="lunch">
-          Lunch
-        </button>
-
-        <button class="filter-btn" data-filter="dinner">
-          Dinner
-        </button>
-
-        <button class="filter-btn" data-filter="dessert">
-          Dessert
-        </button>
-
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dinner">Dinner & 15-Min Meals</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="lunch">Lunch</button>
+        <button class="filter-btn" data-filter="dessert">Dessert</button>
       </div>
-
 
       <div class="recipe-grid" id="recipeGrid">
 
+        <!-- FEATURED VIRAL RECIPE ARTICLE (NEW) -->
+        <article class="recipe-card" data-category="dinner" data-title="10 quick 15-minute dinner ideas weeknight easy chicken ramen">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="15 minute dinner ideas">
+            <button class="favorite" aria-label="Favorite recipe">♡</button>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-category">⭐ Featured Quick Dinner</div>
+            <h3>10 Quick 15-Minute Dinner Ideas for Busy Weeknights</h3>
+            <p>From Creamy Tuscan Garlic Chicken to 10-Minute Sticky Sesame Noodles—save time without sacrificing flavor.</p>
+            <div class="recipe-meta">
+              <span>⏱ 15 min</span>
+              <span>⭐ Super Easy</span>
+            </div>
+          </div>
+        </article>
 
         <!-- RECIPE 1 -->
-
-        <article class="recipe-card"
-                 data-category="breakfast"
-                 data-title="fluffy pancakes">
-
+        <article class="recipe-card" data-category="breakfast" data-title="fluffy pancakes breakfast">
           <div class="recipe-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80"
-              alt="Fluffy pancakes"
-            >
-
-            <button class="favorite" aria-label="Favorite recipe">
-              ♡
-            </button>
-
+            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80" alt="Fluffy pancakes">
+            <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
-
           <div class="recipe-content">
-
-            <div class="recipe-category">
-              Breakfast
-            </div>
-
-            <h3>
-              Fluffy Weekend Pancakes
-            </h3>
-
-            <p>
-              Light, fluffy and perfect with berries, honey or maple syrup.
-            </p>
-
+            <div class="recipe-category">Breakfast</div>
+            <h3>Fluffy Weekend Pancakes</h3>
+            <p>Light, fluffy and perfect with fresh berries, honey or warm maple syrup.</p>
             <div class="recipe-meta">
               <span>⏱ 20 min</span>
               <span>⭐ Easy</span>
             </div>
-
           </div>
-
         </article>
 
-
         <!-- RECIPE 2 -->
-
-        <article class="recipe-card"
-                 data-category="lunch"
-                 data-title="creamy tomato pasta">
-
+        <article class="recipe-card" data-category="lunch" data-title="creamy tomato pasta lunch">
           <div class="recipe-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80"
-              alt="Creamy tomato pasta"
-            >
-
-            <button class="favorite" aria-label="Favorite recipe">
-              ♡
-            </button>
-
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Creamy tomato pasta">
+            <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
-
           <div class="recipe-content">
-
-            <div class="recipe-category">
-              Lunch
-            </div>
-
-            <h3>
-              Creamy Tomato Pasta
-            </h3>
-
-            <p>
-              A comforting pasta dinner with tomato, cream and fresh herbs.
-            </p>
-
+            <div class="recipe-category">Lunch</div>
+            <h3>Creamy Tomato & Basil Pasta</h3>
+            <p>A rich, comforting pasta dinner with roasted tomatoes, cream and parmesan.</p>
             <div class="recipe-meta">
               <span>⏱ 30 min</span>
               <span>⭐ Easy</span>
             </div>
-
           </div>
-
         </article>
 
-
         <!-- RECIPE 3 -->
-
-        <article class="recipe-card"
-                 data-category="dinner"
-                 data-title="roasted chicken vegetables">
-
+        <article class="recipe-card" data-category="dinner" data-title="roasted chicken vegetables dinner">
           <div class="recipe-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80"
-              alt="Roasted chicken"
-            >
-
-            <button class="favorite" aria-label="Favorite recipe">
-              ♡
-            </button>
-
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80" alt="Roasted chicken">
+            <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
-
           <div class="recipe-content">
-
-            <div class="recipe-category">
-              Dinner
-            </div>
-
-            <h3>
-              Roasted Chicken & Vegetables
-            </h3>
-
-            <p>
-              Juicy roasted chicken served with colourful seasonal vegetables.
-            </p>
-
+            <div class="recipe-category">Dinner</div>
+            <h3>Golden Roasted Chicken & Veggies</h3>
+            <p>Juicy herb-seasoned roasted chicken served with colorful seasonal vegetables.</p>
             <div class="recipe-meta">
               <span>⏱ 50 min</span>
               <span>⭐ Medium</span>
             </div>
-
           </div>
-
         </article>
 
-
         <!-- RECIPE 4 -->
-
-        <article class="recipe-card"
-                 data-category="dessert"
-                 data-title="chocolate cake">
-
+        <article class="recipe-card" data-category="dessert" data-title="chocolate cake dessert">
           <div class="recipe-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
-              alt="Chocolate cake"
-            >
-
-            <button class="favorite" aria-label="Favorite recipe">
-              ♡
-            </button>
-
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Chocolate cake">
+            <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
-
           <div class="recipe-content">
-
-            <div class="recipe-category">
-              Dessert
-            </div>
-
-            <h3>
-              Classic Chocolate Cake
-            </h3>
-
-            <p>
-              Rich chocolate cake that's soft, moist and perfect for sharing.
-            </p>
-
+            <div class="recipe-category">Dessert</div>
+            <h3>Classic Moist Chocolate Cake</h3>
+            <p>Rich chocolate cake that's velvety soft, deeply flavorful and perfect for sharing.</p>
             <div class="recipe-meta">
               <span>⏱ 45 min</span>
               <span>⭐ Medium</span>
             </div>
-
           </div>
-
         </article>
 
-
         <!-- RECIPE 5 -->
-
-        <article class="recipe-card"
-                 data-category="lunch"
-                 data-title="greek salad">
-
+        <article class="recipe-card" data-category="lunch" data-title="fresh greek salad feta cheese lunch">
           <div class="recipe-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=80"
-              alt="Fresh Greek salad"
-            >
-
-            <button class="favorite" aria-label="Favorite recipe">
-              ♡
-            </button>
-
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=80" alt="Fresh Greek salad">
+            <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
-
           <div class="recipe-content">
-
-            <div class="recipe-category">
-              Lunch
-            </div>
-
-            <h3>
-              Fresh Greek Salad
-            </h3>
-
-            <p>
-              Crisp vegetables, feta cheese, olives and a simple dressing.
-            </p>
-
+            <div class="recipe-category">Lunch</div>
+            <h3>Crisp Mediterranean Greek Salad</h3>
+            <p>Crisp cucumbers, ripe tomatoes, kalamata olives, feta cheese and olive oil.</p>
             <div class="recipe-meta">
               <span>⏱ 15 min</span>
               <span>⭐ Easy</span>
             </div>
-
           </div>
-
         </article>
-
-
-        <!-- RECIPE 6 -->
-
-        <article class="recipe-card"
-                 data-category="dinner"
-                 data-title="beef burger">
-
-          <div class="recipe-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
-              alt="Beef burger"
-            >
-
-            <button class="favorite" aria-label="Favorite recipe">
-              ♡
-            </button>
-
-          </div>
-
-          <div class="recipe-content">
-
-            <div class="recipe-category">
-              Dinner
-            </div>
-
-            <h3>
-              Homemade Beef Burger
-            </h3>
-
-            <p>
-              Juicy homemade burgers with fresh toppings and crispy fries.
-            </p>
-
-            <div class="recipe-meta">
-              <span>⏱ 35 min</span>
-              <span>⭐ Medium</span>
-            </div>
-
-          </div>
-
-        </article>
-
 
       </div>
 
       <div class="no-results" id="noResults">
-        No recipes found. Try another search.
+        No recipes found. Try searching for "chicken", "pasta", or "15 minute".
       </div>
-
     </div>
-
   </section>
-
 
   <!-- =========================
        FOOD GUIDE
   ========================= -->
-
   <section class="section guide" id="guides">
-
     <div class="container guide-grid">
-
       <div class="guide-image">
-
-        <img
-          src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85"
-          alt="Cooking food in kitchen"
-        >
-
+        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85" alt="Cooking food in kitchen">
       </div>
 
-
       <div>
-
-        <div class="eyebrow">
-          Food Guide
-        </div>
-
-        <h2>
-          Cook smarter, not harder.
-        </h2>
-
-        <p>
-          Learn practical cooking techniques, kitchen tips and simple ways
-          to make everyday meals more enjoyable.
-        </p>
+        <div class="eyebrow">Food Guides</div>
+        <h2>Cook smarter, not harder.</h2>
+        <p>Learn practical cooking techniques, kitchen shortcuts and simple ways to make everyday meals enjoyable.</p>
 
         <ul class="guide-list">
-
-          <li>
-            Easy kitchen techniques for beginners
-          </li>
-
-          <li>
-            Meal planning ideas for busy families
-          </li>
-
-          <li>
-            Ingredient substitutions and cooking tips
-          </li>
-
-          <li>
-            Food storage and preparation guides
-          </li>
-
+          <li>15-Minute weeknight dinner meal prep hacks</li>
+          <li>Easy kitchen techniques and knife skills for beginners</li>
+          <li>Smart ingredient substitutions when you are missing items</li>
+          <li>Fresh food storage and meal planning systems</li>
         </ul>
 
-        <a href="#newsletter" class="btn btn-primary">
-          Get Food Tips
-        </a>
-
+        <a href="#newsletter" class="btn btn-primary">Get Free Recipe Tips</a>
       </div>
-
     </div>
-
   </section>
 
-
-  <!-- =========================
-       GUEST POST
-  ========================= -->
-
-  <section class="section guest-post" id="guest-post">
-
-    <div class="container guest-grid">
-
+  <!-- ==============================================
+       ABOUT US & CONTACT SECTION (With smarthomep123@gmail.com)
+  ============================================== -->
+  <section class="section about-contact" id="about-contact">
+    <div class="container contact-grid">
       <div>
+        <div class="eyebrow">About Foodie Guest Posts</div>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 40px; margin-bottom: 16px; line-height: 1.2;">
+          Passionate About Good Food & Easy Home Cooking
+        </h2>
+        <p style="color: #6d625b; margin-bottom: 20px; font-size: 16px;">
+          Foodie Guest Posts is a digital culinary hub dedicated to everyday home cooks, recipe creators, and food writers. We believe great food doesn't need to take hours of complicated preparation.
+        </p>
+        <p style="color: #6d625b; font-size: 15px;">
+          Whether you want to contribute a guest article, submit a family recipe, collaborate on brand sponsorships, or ask a culinary question, our team is always excited to connect!
+        </p>
+      </div>
 
-        <div class="eyebrow">
-          Guest Contributors
+      <div class="contact-card">
+        <h3>Get In Touch / Guest Posts</h3>
+        <p style="color: #756c66; font-size: 14px;">
+          Have a recipe inquiry, guest post submission, or sponsorship request? Reach us directly via Gmail:
+        </p>
+
+        <!-- Direct Gmail Box -->
+        <div class="email-box">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span>Official Contact Email</span>
+            <a href="mailto:smarthomep123@gmail.com">smarthomep123@gmail.com</a>
+          </div>
         </div>
 
-        <h2>
-          Share your food expertise with our readers.
-        </h2>
-
-        <p>
-          Are you a food blogger, chef, recipe creator or cooking expert?
-          You can contribute useful and original food content to our website.
-        </p>
-
-        <a
-          href="mailto:hello@yourdomain.com?subject=Guest%20Post%20Submission"
-          class="btn btn-primary"
-        >
-          Contact Us
+        <!-- Direct Email Button -->
+        <a href="mailto:smarthomep123@gmail.com?subject=Inquiry%20from%20Foodie%20Guest%20Posts%20Visitor" class="btn btn-primary" style="width: 100%; text-align: center;">
+          <i class="fa-solid fa-paper-plane"></i> Send Message on Gmail
         </a>
 
-      </div>
-
-
-      <div class="guest-box">
-
-        <h3>
-          What we look for
-        </h3>
-
-        <ul>
-
-          <li>
-            Original food and recipe content
-          </li>
-
-          <li>
-            Helpful cooking guides
-          </li>
-
-          <li>
-            High-quality food photography
-          </li>
-
-          <li>
-            Useful tips and genuine expertise
-          </li>
-
-          <li>
-            Well-written, reader-focused articles
-          </li>
-
-        </ul>
-
-        <p>
-          Please send your article idea before submitting a complete article.
+        <p style="text-align: center; color: #8e837b; font-size: 12px; margin-top: 14px;">
+          <i class="fa-solid fa-clock"></i> Typical response time: Within 24 hours
         </p>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- =========================
        NEWSLETTER
   ========================= -->
-
   <section class="section newsletter" id="newsletter">
-
     <div class="container newsletter-inner">
-
-      <h2>
-        Get delicious ideas in your inbox.
-      </h2>
-
-      <p>
-        Join our newsletter for new recipes, cooking tips and food inspiration.
-      </p>
-
+      <h2>Get delicious recipes in your inbox.</h2>
+      <p>Join thousands of home foodies receiving fresh recipes, meal prep guides and weekly cooking inspiration.</p>
 
       <form class="newsletter-form" id="newsletterForm">
-
-        <input
-          type="email"
-          id="emailInput"
-          placeholder="Your email address"
-          required
-        >
-
-        <button type="submit">
-          Subscribe
-        </button>
-
+        <input type="email" id="emailInput" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
       </form>
-
     </div>
-
   </section>
-
 
   <!-- =========================
        FOOTER
   ========================= -->
-
   <footer>
-
     <div class="container">
-
       <div class="footer-grid">
-
-
         <div>
-
-          <div class="footer-logo">
-            Foodie Guest Posts
-          </div>
-
-          <p class="footer-text">
-            Delicious recipes, practical cooking tips and food inspiration
-            for everyday food lovers.
+          <div class="footer-logo">Foodie <span>Guest Posts</span></div>
+          <p class="footer-text">Delicious recipes, practical cooking tips and easy food guides for everyday food lovers.</p>
+          <p style="margin-top: 12px; font-size: 13px; color: #ffd8ca;">
+            <i class="fa-solid fa-envelope"></i> smarthomep123@gmail.com
           </p>
-
         </div>
 
-
         <div>
-
-          <h4>
-            Explore
-          </h4>
-
+          <h4>Explore</h4>
           <ul>
-            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#recipes">All Recipes</a></li>
             <li><a href="#categories">Categories</a></li>
             <li><a href="#guides">Food Guides</a></li>
           </ul>
-
         </div>
 
-
         <div>
-
-          <h4>
-            Categories
-          </h4>
-
+          <h4>Quick Categories</h4>
           <ul>
-            <li><a href="#recipes">Breakfast</a></li>
-            <li><a href="#recipes">Lunch</a></li>
-            <li><a href="#recipes">Dinner</a></li>
+            <li><a href="#recipes">15-Minute Meals</a></li>
+            <li><a href="#recipes">Breakfast Ideas</a></li>
+            <li><a href="#recipes">Dinner Recipes</a></li>
             <li><a href="#recipes">Desserts</a></li>
           </ul>
-
         </div>
-
 
         <div>
-
-          <h4>
-            Contact
-          </h4>
-
+          <h4>Contact & Info</h4>
           <ul>
-            <li>
-              <a href="mailto:hello@yourdomain.com">
-                Email Us
-              </a>
-            </li>
-
-            <li>
-              <a href="#guest-post">
-                Guest Posts
-              </a>
-            </li>
-
-            <li>
-              <a href="#newsletter">
-                Newsletter
-              </a>
-            </li>
+            <li><a href="mailto:smarthomep123@gmail.com">Email Us</a></li>
+            <li><a href="#about-contact">About Us</a></li>
+            <li><a href="#about-contact">Submit Guest Post</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
           </ul>
-
         </div>
-
-
       </div>
-
 
       <div class="copyright">
-        © 2026 Foodie Guest Posts. All rights reserved.
+        © 2026 Foodie Guest Posts / TastyNest. All rights reserved.
       </div>
-
     </div>
-
   </footer>
 
-
   <!-- =========================
-       JAVASCRIPT
+       CLEAN JAVASCRIPT LOGIC
   ========================= -->
-
   <script>
-
-    /* =========================
-       MOBILE MENU
-    ========================= */
-
+    /* Mobile Menu Toggle */
     const menuBtn = document.getElementById("menuBtn");
     const navLinks = document.getElementById("navLinks");
-
-    menuBtn.addEventListener("click", function () {
-      navLinks.classList.toggle("show");
-    });
-
-
-    /* Close mobile menu after clicking link */
-
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-      link.addEventListener("click", function() {
-
-        navLinks.classList.remove("show");
-
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
       });
 
-    });
+      document.querySelectorAll(".nav-links a").forEach(function(link) {
+        link.addEventListener("click", function() {
+          navLinks.classList.remove("show");
+        });
+      });
+    }
 
-
-    /* =========================
-       FAVORITE BUTTONS
-    ========================= */
-
+    /* Favorite Heart Buttons */
     document.querySelectorAll(".favorite").forEach(function(button) {
-
       button.addEventListener("click", function() {
-
         button.classList.toggle("active");
-
-        if (button.classList.contains("active")) {
-
-          button.textContent = "♥";
-
-        } else {
-
-          button.textContent = "♡";
-
-        }
-
+        button.textContent = button.classList.contains("active") ? "♥" : "♡";
       });
-
     });
 
-
-    /* =========================
-       RECIPE FILTER
-    ========================= */
-
-    const filterButtons =
-      document.querySelectorAll(".filter-btn");
-
-    const recipeCards =
-      document.querySelectorAll(".recipe-card");
+    /* Recipe Category Filters */
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const recipeCards = document.querySelectorAll(".recipe-card");
 
     filterButtons.forEach(function(button) {
-
       button.addEventListener("click", function() {
-
-        const filter =
-          button.getAttribute("data-filter");
+        const filter = button.getAttribute("data-filter");
 
         filterButtons.forEach(function(btn) {
           btn.classList.remove("active");
         });
-
         button.classList.add("active");
 
         let visibleCount = 0;
-
         recipeCards.forEach(function(card) {
-
-          const category =
-            card.getAttribute("data-category");
-
+          const category = card.getAttribute("data-category");
           if (filter === "all" || category === filter) {
-
-            card.style.display = "block";
+            card.style.display = "flex";
             visibleCount++;
-
           } else {
-
             card.style.display = "none";
-
           }
-
         });
 
-        document.getElementById("noResults").style.display =
-          visibleCount === 0 ? "block" : "none";
-
+        const noRes = document.getElementById("noResults");
+        if (noRes) noRes.style.display = visibleCount === 0 ? "block" : "none";
       });
-
     });
 
+    /* Instant Recipe Search */
+    const searchInput = document.getElementById("searchInput");
+    if (searchInput) {
+      searchInput.addEventListener("input", function() {
+        const search = searchInput.value.toLowerCase().trim();
+        let visibleCount = 0;
 
-    /* =========================
-       RECIPE SEARCH
-    ========================= */
+        recipeCards.forEach(function(card) {
+          const title = card.getAttribute("data-title") ? card.getAttribute("data-title").toLowerCase() : "";
+          const text = card.textContent.toLowerCase();
 
-    const searchInput =
-      document.getElementById("searchInput");
+          if (title.includes(search) || text.includes(search)) {
+            card.style.display = "flex";
+            visibleCount++;
+          } else {
+            card.style.display = "none";
+          }
+        });
 
-    searchInput.addEventListener("input", function() {
+        const noRes = document.getElementById("noResults");
+        if (noRes) noRes.style.display = visibleCount === 0 ? "block" : "none";
+      });
+    }
 
-      const search =
-        searchInput.value.toLowerCase().trim();
-
-      let visibleCount = 0;
-
-      recipeCards.forEach(function(card) {
-
-        const title =
-          card.getAttribute("data-title").toLowerCase();
-
-        const text =
-          card.textContent.toLowerCase();
-
-        if (
-          title.includes(search) ||
-          text.includes(search)
-        ) {
-
-          card.style.display = "block";
-          visibleCount++;
-
-        } else {
-
-          card.style.display = "none";
-
+    /* Newsletter Form Submit */
+    const newsletterForm = document.getElementById("newsletterForm");
+    if (newsletterForm) {
+      newsletterForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const email = document.getElementById("emailInput").value;
+        if (email) {
+          alert("Thank you for subscribing! We will send delicious recipes to " + email);
+          newsletterForm.reset();
         }
-
       });
+    }
 
-      document.getElementById("noResults").style.display =
-        visibleCount === 0 ? "block" : "none";
-
-    });
-
-
-    /* =========================
-       NEWSLETTER
-    ========================= */
-
-    const newsletterForm =
-      document.getElementById("newsletterForm");
-
-    newsletterForm.addEventListener("submit", function(event) {
-
-      event.preventDefault();
-
-      const email =
-        document.getElementById("emailInput").value;
-
-      if (email) {
-
-        alert(
-          "Thank you for subscribing! We will send delicious recipes to " +
-          email
-        );
-
-        newsletterForm.reset();
-
-      },// =======================================================
-// TASTYNEST: High-Traffic Food & Recipe Article
-// =======================================================
-{
-    id: 1,
-    title: "10 Quick 15-Minute Dinner Ideas for Busy Weeknights (Delicious & Budget-Friendly)",
-    category: "dinner",
-    categoryLabel: "Quick Dinners",
-    readTime: "6 Min Read",
-    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
-    snippet: "Ditch expensive takeout! These 10 flavorful, nutrient-dense 15-minute dinner recipes require minimal prep, one pan, and under $10 in ingredients.",
-    seoKeywords: ["quick 15-minute dinner ideas", "easy weeknight dinner recipes", "one-pan chicken dinner", "healthy 15 minute meals", "budget friendly family dinners"],
-    content: `
-        <p>After a long, exhausting workday, the last thing you want is to spend two hours hovering over a hot stove and facing a mountain of dirty dishes. These <strong>fast 15-minute dinner ideas</strong> deliver restaurant-quality flavor with basic pantry staples and minimal cleanup.</p>
-
-        <h3>1. Creamy Garlic Butter Tuscan Chicken (12 Minutes)</h3>
-        <p><strong>Ingredients:</strong> Thin chicken cutlets, minced garlic, heavy cream (or coconut milk), baby spinach, sun-dried tomatoes, and grated parmesan.</p>
-        <p><strong>How to Make:</strong> Sear thin chicken breast cutlets in olive oil for 3 minutes per side until golden. Remove chicken, toss in minced garlic, sun-dried tomatoes, and fresh spinach. Pour in cream and parmesan, simmer for 2 minutes into a velvety sauce, and return chicken to coat.</p>
-
-        <h3>2. 10-Minute Sticky Sesame Garlic Ramen Noodles</h3>
-        <p><strong>Ingredients:</strong> Instant ramen noodles (discard seasoning pack), soy sauce, sesame oil, honey (or brown sugar), chili flakes, and toasted sesame seeds.</p>
-        <p><strong>How to Make:</strong> Boil noodles for 3 minutes. In a hot skillet, whisk soy sauce, sesame oil, minced garlic, and honey until bubbly. Toss the cooked noodles directly into the glossy sauce and top with chopped scallions and a soft-boiled egg.</p>
-
-        <h3>3. Sheet-Pan Sizzling Steak & Bell Pepper Fajitas (15 Minutes)</h3>
-        <p><strong>Ingredients:</strong> Thinly sliced flank steak or chicken, sliced tri-color bell peppers, red onions, taco seasoning, and lime juice.</p>
-        <p><strong>How to Make:</strong> Toss steak strips and peppers in olive oil and fajita seasoning. Spread evenly across a hot baking sheet and broil on high for 8-10 minutes. Serve sizzling hot with warm tortillas and fresh guacamole.</p>
-
-        <h3>4. Crispy Air-Fryer Honey Garlic Salmon Bites</h3>
-        <p><strong>Ingredients:</strong> Salmon fillet cut into 1-inch cubes, soy sauce, honey, garlic powder, and paprika.</p>
-        <p><strong>How to Make:</strong> Toss salmon cubes in seasoning and air-fry at 400°F (200°C) for 7 minutes until crispy on the edges and tender inside. Brush with warm honey garlic glaze over steamed jasmine rice.</p>
-    `
-}
-
-    });
-
-
-    /* =========================
-       SMOOTH SCROLL
-    ========================= */
-
+    /* Smooth Scroll */
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-
       anchor.addEventListener("click", function(event) {
-
-        const targetId =
-          anchor.getAttribute("href");
-
-        if (targetId === "#") {
-          return;
-        }
-
-        const target =
-          document.querySelector(targetId);
-
+        const targetId = anchor.getAttribute("href");
+        if (targetId === "#") return;
+        const target = document.querySelector(targetId);
         if (target) {
-
           event.preventDefault();
-
-          target.scrollIntoView({
-            behavior: "smooth"
-          });
-
+          target.scrollIntoView({ behavior: "smooth" });
         }
-
       });
-
     });
-
   </script>
 
 </body>
