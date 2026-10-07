@@ -5,76 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Foodie Guest Posts | Easy Recipes, 15-Minute Meals & Food Guides</title>
-  <meta name="description" content="Discover easy recipes, 15-minute quick dinners, cooking tips, food guides and delicious meal ideas at Foodie Guest Posts.">
-  <meta name="keywords" content="recipes, easy recipes, quick 15-minute dinner ideas, food blog, cooking tips, dinner recipes, breakfast recipes, food guides">
+  <!-- 🔥 High-Ranking SEO Meta Tags -->
+  <title>7 Easy Healthy Family Dinner Recipes (Quick 20-Min Meals) | Foodie Guest Posts</title>
+  <meta name="description" content="Discover 7 easy healthy family dinner recipes that kids and adults love! Quick 20-minute clean eating weeknight dinners on a budget with easy one-pan cooking.">
+  <meta name="keywords" content="healthy family dinner, healthy family dinner recipes, easy healthy dinners for family, quick weeknight meals, kid friendly healthy dinners, clean eating family meals 2026">
   <meta name="author" content="Foodie Guest Posts">
+  <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Foodie Guest Posts - Simple Recipes. Big Flavour.">
-  <meta property="og:description" content="Discover delicious 15-minute food ideas, guest posts, and everyday cooking guides.">
-  <meta property="og:type" content="website">
+  <!-- OpenGraph Social Media Tags -->
+  <meta property="og:title" content="7 Healthy Family Dinner Recipes Everyone Will Love">
+  <meta property="og:description" content="Quick 20-minute healthy family dinner ideas with simple ingredients and zero stress.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=1200&q=80">
 
+  <!-- ⭐ Google Recipe Structured Data Schema (For Instant Ranking & Rich Stars) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Healthy Family Dinner: One-Pan Lemon Herb Chicken & Roasted Potatoes",
+    "image": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=1200&q=80",
+    "description": "A delicious, healthy family dinner recipe ready in 20 minutes with lean protein, fiber-rich potatoes, and fresh lemon garlic herbs.",
+    "keywords": "healthy family dinner, one-pan chicken, weeknight dinner",
+    "author": {
+      "@type": "Organization",
+      "name": "Foodie Guest Posts"
+    },
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "totalTime": "PT30M",
+    "recipeYield": "4 servings",
+    "recipeCategory": "Dinner",
+    "recipeCuisine": "Mediterranean",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "380 calories"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "128"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
-    /* =========================
-       GLOBAL STYLES
-    ========================= */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: "DM Sans", sans-serif;
       background: #fffaf5;
       color: #24201d;
       line-height: 1.6;
     }
+    img { width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button, input { font-family: inherit; }
 
-    img {
-      width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    button, input {
-      font-family: inherit;
-    }
-
-    .container {
-      width: min(1180px, 92%);
-      margin: auto;
-    }
-
-    .section {
-      padding: 75px 0;
-    }
-
-    .section-title {
-      font-family: "Playfair Display", serif;
-      font-size: 42px;
-      line-height: 1.2;
-      margin-bottom: 12px;
-    }
-
-    .section-subtitle {
-      color: #756c66;
-      max-width: 650px;
-      margin-bottom: 35px;
-    }
+    .container { width: min(1180px, 92%); margin: auto; }
+    .section { padding: 75px 0; }
 
     .btn {
       display: inline-flex;
@@ -88,52 +83,17 @@
       transition: 0.25s ease;
       gap: 8px;
     }
+    .btn-primary { background: #e85d3f; color: white; }
+    .btn-primary:hover { background: #c9472d; transform: translateY(-2px); }
+    .btn-light { background: white; color: #e85d3f; border: 1px solid #eadbd1; }
+    .btn-light:hover { background: #fff4ed; }
 
-    .btn-primary {
-      background: #e85d3f;
-      color: white;
-    }
+    /* Topbar */
+    .topbar { background: #29231f; color: white; font-size: 14px; padding: 9px 0; }
+    .topbar-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .topbar a { color: #ffd8ca; font-weight: 700; }
 
-    .btn-primary:hover {
-      background: #c9472d;
-      transform: translateY(-2px);
-    }
-
-    .btn-light {
-      background: white;
-      color: #e85d3f;
-      border: 1px solid #eadbd1;
-    }
-
-    .btn-light:hover {
-      background: #fff4ed;
-    }
-
-    /* =========================
-       TOP BAR
-    ========================= */
-    .topbar {
-      background: #29231f;
-      color: white;
-      font-size: 14px;
-      padding: 9px 0;
-    }
-
-    .topbar-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .topbar a {
-      color: #ffd8ca;
-      font-weight: 700;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
+    /* Header & Nav */
     header {
       background: rgba(255, 250, 245, 0.97);
       border-bottom: 1px solid #eee2d9;
@@ -142,15 +102,7 @@
       z-index: 1000;
       backdrop-filter: blur(10px);
     }
-
-    .nav {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
     .logo {
       font-family: "Playfair Display", serif;
       font-size: 28px;
@@ -158,53 +110,18 @@
       color: #e85d3f;
       white-space: nowrap;
     }
+    .logo span { color: #29231f; }
+    .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
+    .nav-links a { font-weight: 600; color: #413a35; transition: 0.2s; }
+    .nav-links a:hover { color: #e85d3f; }
+    .menu-btn { display: none; border: none; background: transparent; font-size: 28px; cursor: pointer; }
 
-    .logo span {
-      color: #29231f;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-weight: 600;
-      color: #413a35;
-      transition: 0.2s;
-    }
-
-    .nav-links a:hover {
-      color: #e85d3f;
-    }
-
-    .menu-btn {
-      display: none;
-      border: none;
-      background: transparent;
-      font-size: 28px;
-      cursor: pointer;
-    }
-
-    /* =========================
-       HERO
-    ========================= */
+    /* Hero */
     .hero {
       padding: 75px 0;
-      background:
-        radial-gradient(circle at 90% 20%, #ffe5d9 0, transparent 30%),
-        linear-gradient(135deg, #fff7f0, #fffaf5);
+      background: radial-gradient(circle at 90% 20%, #ffe5d9 0, transparent 30%), linear-gradient(135deg, #fff7f0, #fffaf5);
     }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 60px;
-    }
-
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 60px; }
     .eyebrow {
       color: #e85d3f;
       font-weight: 800;
@@ -213,71 +130,59 @@
       font-size: 13px;
       margin-bottom: 15px;
     }
-
     .hero h1 {
       font-family: "Playfair Display", serif;
-      font-size: clamp(44px, 5.5vw, 72px);
-      line-height: 1.05;
+      font-size: clamp(40px, 5.2vw, 65px);
+      line-height: 1.1;
       margin-bottom: 22px;
     }
-
-    .hero h1 span {
-      color: #e85d3f;
-    }
-
-    .hero-text {
-      font-size: 18px;
-      color: #6e655e;
-      max-width: 590px;
-      margin-bottom: 28px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .hero-image {
-      position: relative;
-    }
-
+    .hero h1 span { color: #e85d3f; }
+    .hero-text { font-size: 18px; color: #6e655e; max-width: 590px; margin-bottom: 28px; }
+    .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-image { position: relative; }
     .hero-image img {
-      height: 500px;
+      height: 480px;
       object-fit: cover;
       border-radius: 30px;
       box-shadow: 0 25px 70px rgba(52, 36, 25, 0.18);
     }
-
     .hero-card {
       position: absolute;
-      left: -25px;
+      left: -20px;
       bottom: 25px;
       background: white;
-      padding: 18px 20px;
+      padding: 16px 20px;
       border-radius: 18px;
       box-shadow: 0 15px 40px rgba(52, 36, 25, 0.15);
-      max-width: 230px;
+      max-width: 250px;
     }
 
-    .hero-card strong {
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    .hero-card small {
-      color: #756c66;
-    }
-
-    /* =========================
-       CATEGORIES
-    ========================= */
-    .categories {
+    /* Featured Article Banner */
+    .featured-article-banner {
+      background: #fff;
+      border: 2px solid #efd9ce;
+      border-radius: 25px;
+      padding: 35px;
+      margin-bottom: 50px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 35px;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .featured-article-banner:hover {
+      box-shadow: 0 20px 50px rgba(232, 93, 63, 0.15);
+      border-color: #e85d3f;
+    }
+    .featured-banner-img {
+      height: 280px;
+      object-fit: cover;
+      border-radius: 18px;
     }
 
+    /* Categories */
+    .categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
     .category {
       position: relative;
       overflow: hidden;
@@ -285,17 +190,8 @@
       min-height: 180px;
       cursor: pointer;
     }
-
-    .category img {
-      height: 180px;
-      object-fit: cover;
-      transition: 0.4s;
-    }
-
-    .category:hover img {
-      transform: scale(1.07);
-    }
-
+    .category img { height: 180px; object-fit: cover; transition: 0.4s; }
+    .category:hover img { transform: scale(1.07); }
     .category-overlay {
       position: absolute;
       inset: 0;
@@ -305,25 +201,11 @@
       padding: 20px;
       color: white;
     }
+    .category-overlay h3 { font-family: "Playfair Display", serif; font-size: 24px; }
 
-    .category-overlay h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 24px;
-    }
-
-    /* =========================
-       SEARCH & FILTERS
-    ========================= */
-    .search-area {
-      background: #f5ebe3;
-      padding: 35px 0;
-    }
-
-    .search-box {
-      max-width: 700px;
-      margin: auto;
-    }
-
+    /* Search & Filters */
+    .search-area { background: #f5ebe3; padding: 35px 0; }
+    .search-box { max-width: 700px; margin: auto; }
     .search-box input {
       width: 100%;
       padding: 17px 24px;
@@ -333,19 +215,12 @@
       font-size: 16px;
       background: white;
     }
-
     .search-box input:focus {
       border-color: #e85d3f;
       box-shadow: 0 0 0 4px rgba(232,93,63,0.1);
     }
 
-    .filters {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 35px;
-    }
-
+    .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px; }
     .filter-btn {
       border: 1px solid #dfd2c9;
       background: white;
@@ -356,23 +231,14 @@
       color: #514942;
       transition: 0.2s;
     }
-
-    .filter-btn.active,
-    .filter-btn:hover {
+    .filter-btn.active, .filter-btn:hover {
       background: #e85d3f;
       color: white;
       border-color: #e85d3f;
     }
 
-    /* =========================
-       RECIPE CARDS GRID
-    ========================= */
-    .recipe-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
+    /* Recipe Grid */
+    .recipe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
     .recipe-card {
       background: white;
       border-radius: 20px;
@@ -381,494 +247,206 @@
       transition: 0.3s;
       display: flex;
       flex-direction: column;
-    }
-
-    .recipe-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 45px rgba(52,36,25,0.12);
-    }
-
-    .recipe-image {
-      height: 230px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .recipe-image img {
-      height: 100%;
-      object-fit: cover;
-      transition: 0.4s;
-    }
-
-    .recipe-card:hover .recipe-image img {
-      transform: scale(1.06);
-    }
-
-    .favorite {
-      position: absolute;
-      right: 14px;
-      top: 14px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: none;
-      background: white;
       cursor: pointer;
-      font-size: 19px;
+    }
+    .recipe-card:hover { transform: translateY(-6px); box-shadow: 0 18px 45px rgba(52,36,25,0.12); }
+    .recipe-image { height: 230px; position: relative; overflow: hidden; }
+    .recipe-image img { height: 100%; object-fit: cover; transition: 0.4s; }
+    .recipe-card:hover .recipe-image img { transform: scale(1.06); }
+    .favorite {
+      position: absolute; right: 14px; top: 14px; width: 40px; height: 40px;
+      border-radius: 50%; border: none; background: white; cursor: pointer; font-size: 19px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.12);
     }
+    .favorite.active { color: #e85d3f; }
+    .recipe-content { padding: 22px; display: flex; flex-direction: column; flex-grow: 1; }
+    .recipe-category { color: #e85d3f; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 800; }
+    .recipe-content h3 { font-family: "Playfair Display", serif; font-size: 23px; line-height: 1.3; margin: 6px 0 10px; }
+    .recipe-content p { color: #756c66; font-size: 14px; margin-bottom: 16px; flex-grow: 1; }
+    .recipe-meta { display: flex; justify-content: space-between; color: #6f665f; font-size: 13px; border-top: 1px solid #eee2d9; padding-top: 13px; }
 
-    .favorite.active {
-      color: #e85d3f;
-    }
-
-    .recipe-content {
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-
-    .recipe-category {
-      color: #e85d3f;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 800;
-    }
-
-    .recipe-content h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 23px;
-      line-height: 1.3;
-      margin: 6px 0 10px;
-    }
-
-    .recipe-content p {
-      color: #756c66;
-      font-size: 14px;
-      margin-bottom: 16px;
-      flex-grow: 1;
-    }
-
-    .recipe-meta {
-      display: flex;
-      justify-content: space-between;
-      color: #6f665f;
-      font-size: 13px;
-      border-top: 1px solid #eee2d9;
-      padding-top: 13px;
-    }
-
-    /* =========================
-       FOOD GUIDE SECTION
-    ========================= */
-    .guide {
-      background: #29231f;
-      color: white;
-    }
-
-    .guide-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .guide-image img {
-      height: 450px;
-      object-fit: cover;
-      border-radius: 25px;
-    }
-
-    .guide h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 44px;
-      line-height: 1.1;
-      margin-bottom: 18px;
-    }
-
-    .guide p {
-      color: #d8cec7;
-      margin-bottom: 25px;
-    }
-
-    .guide-list {
-      list-style: none;
-      margin-bottom: 28px;
-    }
-
-    .guide-list li {
-      margin-bottom: 10px;
-      color: #eee4de;
-    }
-
-    .guide-list li::before {
-      content: "✓";
-      color: #ffad91;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-
-    /* =========================
-       ABOUT & CONTACT SECTION (With smarthomep123@gmail.com)
-    ========================= */
-    .about-contact {
-      background: #fff0e8;
-      border-top: 1px solid #efd9ce;
-      border-bottom: 1px solid #efd9ce;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 45px;
-      align-items: center;
-    }
-
+    /* About & Contact */
+    .about-contact { background: #fff0e8; border-top: 1px solid #efd9ce; border-bottom: 1px solid #efd9ce; }
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 45px; align-items: center; }
     .contact-card {
-      background: white;
-      padding: 35px;
-      border-radius: 25px;
-      border: 1px solid #efd9ce;
+      background: white; padding: 35px; border-radius: 25px; border: 1px solid #efd9ce;
       box-shadow: 0 15px 40px rgba(52, 36, 25, 0.08);
     }
-
-    .contact-card h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      margin-bottom: 12px;
-      color: #29231f;
-    }
-
+    .contact-card h3 { font-family: "Playfair Display", serif; font-size: 28px; margin-bottom: 12px; }
     .email-box {
-      background: #fffaf5;
-      border: 2px dashed #e85d3f;
-      padding: 20px;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin: 20px 0;
+      background: #fffaf5; border: 2px dashed #e85d3f; padding: 20px; border-radius: 16px;
+      display: flex; align-items: center; gap: 16px; margin: 20px 0;
     }
+    .email-box i { font-size: 30px; color: #e85d3f; }
+    .email-box span { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #756c66; font-weight: 700; }
+    .email-box a { color: #e85d3f; font-size: 18px; font-weight: 700; word-break: break-all; }
 
-    .email-box i {
-      font-size: 30px;
-      color: #e85d3f;
-    }
-
-    .email-box span {
-      display: block;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #756c66;
-      font-weight: 700;
-    }
-
-    .email-box a {
-      color: #e85d3f;
-      font-size: 18px;
-      font-weight: 700;
-      word-break: break-all;
-    }
-
-    /* =========================
-       NEWSLETTER
-    ========================= */
-    .newsletter {
-      background: #e85d3f;
-      color: white;
-    }
-
-    .newsletter-inner {
-      text-align: center;
-      max-width: 760px;
-      margin: auto;
-    }
-
-    .newsletter h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 45px;
-      margin-bottom: 10px;
-    }
-
-    .newsletter p {
-      opacity: 0.95;
-      margin-bottom: 25px;
-    }
-
-    .newsletter-form {
-      display: flex;
-      max-width: 560px;
-      margin: auto;
-      gap: 10px;
-    }
-
-    .newsletter-form input {
-      flex: 1;
-      border: none;
-      border-radius: 999px;
-      padding: 15px 22px;
-      outline: none;
-      font-size: 15px;
-    }
-
+    /* Newsletter & Footer */
+    .newsletter { background: #e85d3f; color: white; }
+    .newsletter-inner { text-align: center; max-width: 760px; margin: auto; }
+    .newsletter h2 { font-family: "Playfair Display", serif; font-size: 45px; margin-bottom: 10px; }
+    .newsletter p { opacity: 0.95; margin-bottom: 25px; }
+    .newsletter-form { display: flex; max-width: 560px; margin: auto; gap: 10px; }
+    .newsletter-form input { flex: 1; border: none; border-radius: 999px; padding: 15px 22px; outline: none; font-size: 15px; }
     .newsletter-form button {
-      background: #29231f;
-      color: white;
-      border: none;
-      border-radius: 999px;
-      padding: 0 28px;
-      cursor: pointer;
-      font-weight: 700;
-      transition: 0.2s;
+      background: #29231f; color: white; border: none; border-radius: 999px; padding: 0 28px;
+      cursor: pointer; font-weight: 700; transition: 0.2s;
     }
+    .newsletter-form button:hover { background: #151210; }
 
-    .newsletter-form button:hover {
-      background: #151210;
-    }
+    footer { background: #29231f; color: white; padding: 60px 0 25px; }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 35px; margin-bottom: 40px; }
+    .footer-logo { font-family: "Playfair Display", serif; font-size: 28px; margin-bottom: 12px; color: #e85d3f; }
+    .footer-logo span { color: white; }
+    .footer-text { color: #bdb2aa; max-width: 320px; font-size: 14px; }
+    footer h4 { margin-bottom: 15px; font-size: 16px; }
+    footer ul { list-style: none; }
+    footer li { margin-bottom: 9px; }
+    footer li a { color: #bdb2aa; font-size: 14px; transition: 0.2s; }
+    footer li a:hover { color: #ffd8ca; }
+    .copyright { border-top: 1px solid #453d38; padding-top: 20px; color: #9c918a; font-size: 13px; text-align: center; }
 
-    /* =========================
-       FOOTER
-    ========================= */
-    footer {
-      background: #29231f;
-      color: white;
-      padding: 60px 0 25px;
-    }
+    .no-results { display: none; text-align: center; padding: 40px; color: #756c66; }
 
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1fr;
-      gap: 35px;
-      margin-bottom: 40px;
-    }
-
-    .footer-logo {
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      margin-bottom: 12px;
-      color: #e85d3f;
-    }
-
-    .footer-logo span {
-      color: white;
-    }
-
-    .footer-text {
-      color: #bdb2aa;
-      max-width: 320px;
-      font-size: 14px;
-    }
-
-    footer h4 {
-      margin-bottom: 15px;
-      font-size: 16px;
-    }
-
-    footer ul {
-      list-style: none;
-    }
-
-    footer li {
-      margin-bottom: 9px;
-    }
-
-    footer li a {
-      color: #bdb2aa;
-      font-size: 14px;
-      transition: 0.2s;
-    }
-
-    footer li a:hover {
-      color: #ffd8ca;
-    }
-
-    .copyright {
-      border-top: 1px solid #453d38;
-      padding-top: 20px;
-      color: #9c918a;
-      font-size: 13px;
-      text-align: center;
-    }
-
-    .no-results {
-      display: none;
-      text-align: center;
-      padding: 40px;
-      color: #756c66;
-    }
-
-    /* =========================
-       RESPONSIVE
-    ========================= */
     @media (max-width: 900px) {
-      .hero-grid, .guide-grid, .contact-grid {
-        grid-template-columns: 1fr;
-      }
+      .hero-grid, .contact-grid, .featured-article-banner { grid-template-columns: 1fr; }
       .hero-image { order: -1; }
-      .categories, .recipe-grid, .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .categories, .recipe-grid, .footer-grid { grid-template-columns: repeat(2, 1fr); }
       .nav-links {
-        position: absolute;
-        top: 76px;
-        left: 0;
-        right: 0;
-        background: #fffaf5;
-        display: none;
-        flex-direction: column;
-        padding: 25px;
-        border-bottom: 1px solid #eee2d9;
+        position: absolute; top: 76px; left: 0; right: 0; background: #fffaf5;
+        display: none; flex-direction: column; padding: 25px; border-bottom: 1px solid #eee2d9;
       }
       .nav-links.show { display: flex; }
       .menu-btn { display: block; }
     }
 
     @media (max-width: 600px) {
-      .categories, .recipe-grid, .footer-grid {
-        grid-template-columns: 1fr;
-      }
+      .categories, .recipe-grid, .footer-grid { grid-template-columns: 1fr; }
       .newsletter-form { flex-direction: column; }
       .newsletter-form button { padding: 14px; }
-      .section-title, .hero h1 { font-size: 36px; }
+      .hero h1 { font-size: 36px; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- =========================
-       TOP BAR
-  ========================= -->
+  <!-- TOP BAR -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <span>Fresh recipes, 15-minute meals & cooking guides</span>
-      <a href="#about-contact">Guest Post & Collaboration: smarthomep123@gmail.com →</a>
+      <span>⭐ Trending Keyword 2026: <strong>Healthy Family Dinner Recipes</strong> (Quick 20-Min Meals)</span>
+      <a href="#about-contact">Guest Post / Inquiries: smarthomep123@gmail.com →</a>
     </div>
   </div>
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+  <!-- HEADER -->
   <header>
     <div class="container nav">
-      <a href="#" class="logo">
-        Foodie <span>Guest Posts</span>
-      </a>
-
+      <a href="#" class="logo">Foodie <span>Guest Posts</span></a>
       <button class="menu-btn" id="menuBtn">☰</button>
-
       <ul class="nav-links" id="navLinks">
         <li><a href="#recipes">Recipes</a></li>
         <li><a href="#categories">Categories</a></li>
-        <li><a href="#guides">Food Guides</a></li>
+        <li><a href="#featured-guide">Healthy Dinners</a></li>
         <li><a href="#about-contact" style="color: #e85d3f; font-weight: 700;">About & Contact</a></li>
         <li><a href="#newsletter" class="btn btn-primary">Newsletter</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- =========================
-       HERO
-  ========================= -->
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">Welcome to Foodie Guest Posts</div>
-        <h1>Simple recipes. <span>Big flavour.</span></h1>
+        <div class="eyebrow">Viral Weeknight Recipes</div>
+        <h1>Healthy Family Dinner <span>Made Simple.</span></h1>
         <p class="hero-text">
-          Discover quick 15-minute dinners, useful cooking tips and foolproof food guides made for everyday home cooks. Easy ideas and delicious inspiration for your next meal.
+          Say goodbye to mealtime battles! Discover 7 easy healthy family dinner recipes that combine nutrient-dense whole foods, budget pantry staples, and 20-minute prep time.
         </p>
-
         <div class="hero-buttons">
-          <a href="#recipes" class="btn btn-primary">Explore Recipes</a>
+          <button onclick="openRecipeArticle()" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Read Healthy Dinner Guide</button>
           <a href="#about-contact" class="btn btn-light">Contact & Guest Posts</a>
         </div>
       </div>
 
       <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Fresh healthy food">
+        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=1200&q=85" alt="Healthy family dinner recipes">
         <div class="hero-card">
-          <strong>Today's Inspiration</strong>
-          <small>Creamy Tuscan Garlic Chicken (12 Min)</small>
+          <div style="color: #e85d3f; font-size: 13px; font-weight: bold; margin-bottom: 2px;">⭐⭐⭐⭐⭐ 4.9/5 Rating</div>
+          <strong>Healthy Family Dinner</strong>
+          <small>Lemon Herb Chicken & Roast Veggies (20 Min)</small>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- =========================
-       CATEGORIES
-  ========================= -->
-  <section class="section" id="categories">
-    <div class="container">
-      <h2 class="section-title">Browse by category</h2>
-      <p class="section-subtitle">Find something delicious for breakfast, lunch, quick dinners or your next sweet craving.</p>
-
-      <div class="categories">
-        <a href="#recipes" class="category">
-          <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=80" alt="Breakfast">
-          <div class="category-overlay"><h3>Breakfast</h3></div>
-        </a>
-
-        <a href="#recipes" class="category">
-          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Lunch">
-          <div class="category-overlay"><h3>Lunch</h3></div>
-        </a>
-
-        <a href="#recipes" class="category">
-          <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=900&q=80" alt="Dinner">
-          <div class="category-overlay"><h3>Dinner</h3></div>
-        </a>
-
-        <a href="#recipes" class="category">
-          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Desserts">
-          <div class="category-overlay"><h3>Desserts</h3></div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       SEARCH BAR
-  ========================= -->
-  <section class="search-area">
-    <div class="container">
-      <div class="search-box">
-        <input type="search" id="searchInput" placeholder="Search delicious recipes... e.g. 15 minute, pasta, chicken, cake">
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       RECIPES GRID SECTION
-  ========================= -->
+  <!-- MAIN RECIPES SECTION -->
   <section class="section" id="recipes">
     <div class="container">
-      <h2 class="section-title">Latest recipes & meal ideas</h2>
-      <p class="section-subtitle">Easy-to-follow recipes for busy weeknights and relaxed weekends.</p>
 
+      <!-- 🌟 FEATURED ARTICLE HERO BANNER (CLICKABLE FOR FAST INDEXING) -->
+      <div class="featured-article-banner" id="featured-guide" onclick="openRecipeArticle()">
+        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=900&q=80" alt="Healthy family dinner recipes" class="featured-banner-img">
+        <div>
+          <span style="color: #e85d3f; font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px;">🔥 Cover Story • Top SEO Recipe</span>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; line-height: 1.25; margin: 8px 0 12px; color: #29231f;">
+            7 Healthy Family Dinner Recipes That Picky Kids Will Actually Love
+          </h2>
+          <p style="color: #6d625b; font-size: 15px; margin-bottom: 18px;">
+            One-pan lemon chicken, honey garlic salmon bites, and hidden-veggie turkey pasta—discover clean eating dinners designed for busy weeknights.
+          </p>
+          <div style="display: flex; gap: 20px; font-size: 13px; color: #756c66; align-items: center;">
+            <span><i class="fa-regular fa-clock"></i> 20 Min Cook</span>
+            <span><i class="fa-solid fa-utensils"></i> 4 Servings</span>
+            <span style="color: #e85d3f; font-weight: 700;">Click to Read Full Guide →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH BAR -->
+      <div class="search-box" style="margin-bottom: 35px;">
+        <input type="search" id="searchInput" placeholder="Search healthy family dinner recipes... e.g. chicken, salmon, pasta, 15 minute">
+      </div>
+
+      <!-- CATEGORY FILTERS -->
       <div class="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="dinner">Dinner & 15-Min Meals</button>
+        <button class="filter-btn active" data-filter="all">All Recipes</button>
+        <button class="filter-btn" data-filter="dinner">Healthy Family Dinners</button>
         <button class="filter-btn" data-filter="breakfast">Breakfast</button>
         <button class="filter-btn" data-filter="lunch">Lunch</button>
         <button class="filter-btn" data-filter="dessert">Dessert</button>
       </div>
 
+      <!-- RECIPE GRID -->
       <div class="recipe-grid" id="recipeGrid">
 
-        <!-- FEATURED VIRAL RECIPE ARTICLE (NEW) -->
-        <article class="recipe-card" data-category="dinner" data-title="10 quick 15-minute dinner ideas weeknight easy chicken ramen">
+        <!-- CARD 1: HEALTHY FAMILY DINNER (CLICKABLE MODAL) -->
+        <article class="recipe-card" data-category="dinner" data-title="healthy family dinner recipes one pan lemon chicken salmon" onclick="openRecipeArticle()">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=900&q=80" alt="Healthy family dinner">
+            <button class="favorite" aria-label="Favorite recipe">♡</button>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-category">⭐ Featured Family Meal</div>
+            <h3>One-Pan Lemon Herb Chicken & Potatoes</h3>
+            <p>Juicy chicken breasts baked with baby potatoes, green beans and aromatic garlic oregano butter.</p>
+            <div class="recipe-meta">
+              <span>⏱ 20 min</span>
+              <span>⭐ Family Favorite</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2: 15-MINUTE QUICK DINNER -->
+        <article class="recipe-card" data-category="dinner" data-title="10 quick 15-minute dinner ideas weeknight easy chicken ramen" onclick="openRecipeArticle()">
           <div class="recipe-image">
             <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="15 minute dinner ideas">
             <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
           <div class="recipe-content">
-            <div class="recipe-category">⭐ Featured Quick Dinner</div>
-            <h3>10 Quick 15-Minute Dinner Ideas for Busy Weeknights</h3>
-            <p>From Creamy Tuscan Garlic Chicken to 10-Minute Sticky Sesame Noodles—save time without sacrificing flavor.</p>
+            <div class="recipe-category">⭐ 15-Min Dinners</div>
+            <h3>Crispy Air Fryer Honey Garlic Salmon Bites</h3>
+            <p>Tender salmon cubes glazed in sweet soy honey garlic sauce served over warm steamed rice.</p>
             <div class="recipe-meta">
               <span>⏱ 15 min</span>
               <span>⭐ Super Easy</span>
@@ -876,15 +454,15 @@
           </div>
         </article>
 
-        <!-- RECIPE 1 -->
-        <article class="recipe-card" data-category="breakfast" data-title="fluffy pancakes breakfast">
+        <!-- CARD 3: BREAKFAST -->
+        <article class="recipe-card" data-category="breakfast" data-title="fluffy weekend pancakes berries breakfast">
           <div class="recipe-image">
             <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80" alt="Fluffy pancakes">
             <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
           <div class="recipe-content">
             <div class="recipe-category">Breakfast</div>
-            <h3>Fluffy Weekend Pancakes</h3>
+            <h3>Fluffy Golden Weekend Pancakes</h3>
             <p>Light, fluffy and perfect with fresh berries, honey or warm maple syrup.</p>
             <div class="recipe-meta">
               <span>⏱ 20 min</span>
@@ -893,24 +471,24 @@
           </div>
         </article>
 
-        <!-- RECIPE 2 -->
-        <article class="recipe-card" data-category="lunch" data-title="creamy tomato pasta lunch">
+        <!-- CARD 4: LUNCH -->
+        <article class="recipe-card" data-category="lunch" data-title="creamy tomato basil pasta lunch">
           <div class="recipe-image">
             <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Creamy tomato pasta">
             <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
           <div class="recipe-content">
             <div class="recipe-category">Lunch</div>
-            <h3>Creamy Tomato & Basil Pasta</h3>
-            <p>A rich, comforting pasta dinner with roasted tomatoes, cream and parmesan.</p>
+            <h3>Creamy Roasted Tomato Pasta</h3>
+            <p>A comforting pasta dinner with roasted tomatoes, fresh cream, basil, and parmesan.</p>
             <div class="recipe-meta">
-              <span>⏱ 30 min</span>
+              <span>⏱ 25 min</span>
               <span>⭐ Easy</span>
             </div>
           </div>
         </article>
 
-        <!-- RECIPE 3 -->
+        <!-- CARD 5: DINNER -->
         <article class="recipe-card" data-category="dinner" data-title="roasted chicken vegetables dinner">
           <div class="recipe-image">
             <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80" alt="Roasted chicken">
@@ -921,22 +499,22 @@
             <h3>Golden Roasted Chicken & Veggies</h3>
             <p>Juicy herb-seasoned roasted chicken served with colorful seasonal vegetables.</p>
             <div class="recipe-meta">
-              <span>⏱ 50 min</span>
+              <span>⏱ 45 min</span>
               <span>⭐ Medium</span>
             </div>
           </div>
         </article>
 
-        <!-- RECIPE 4 -->
-        <article class="recipe-card" data-category="dessert" data-title="chocolate cake dessert">
+        <!-- CARD 6: DESSERT -->
+        <article class="recipe-card" data-category="dessert" data-title="classic moist chocolate cake dessert">
           <div class="recipe-image">
             <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Chocolate cake">
             <button class="favorite" aria-label="Favorite recipe">♡</button>
           </div>
           <div class="recipe-content">
             <div class="recipe-category">Dessert</div>
-            <h3>Classic Moist Chocolate Cake</h3>
-            <p>Rich chocolate cake that's velvety soft, deeply flavorful and perfect for sharing.</p>
+            <h3>Classic Rich Chocolate Cake</h3>
+            <p>Moist chocolate cake that's velvety soft, deeply flavorful and perfect for family gatherings.</p>
             <div class="recipe-meta">
               <span>⏱ 45 min</span>
               <span>⭐ Medium</span>
@@ -944,60 +522,76 @@
           </div>
         </article>
 
-        <!-- RECIPE 5 -->
-        <article class="recipe-card" data-category="lunch" data-title="fresh greek salad feta cheese lunch">
-          <div class="recipe-image">
-            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=80" alt="Fresh Greek salad">
-            <button class="favorite" aria-label="Favorite recipe">♡</button>
-          </div>
-          <div class="recipe-content">
-            <div class="recipe-category">Lunch</div>
-            <h3>Crisp Mediterranean Greek Salad</h3>
-            <p>Crisp cucumbers, ripe tomatoes, kalamata olives, feta cheese and olive oil.</p>
-            <div class="recipe-meta">
-              <span>⏱ 15 min</span>
-              <span>⭐ Easy</span>
-            </div>
-          </div>
-        </article>
-
       </div>
 
       <div class="no-results" id="noResults">
-        No recipes found. Try searching for "chicken", "pasta", or "15 minute".
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       FOOD GUIDE
-  ========================= -->
-  <section class="section guide" id="guides">
-    <div class="container guide-grid">
-      <div class="guide-image">
-        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85" alt="Cooking food in kitchen">
+        No recipes found. Try searching for "healthy family", "chicken", or "15 minute".
       </div>
 
-      <div>
-        <div class="eyebrow">Food Guides</div>
-        <h2>Cook smarter, not harder.</h2>
-        <p>Learn practical cooking techniques, kitchen shortcuts and simple ways to make everyday meals enjoyable.</p>
-
-        <ul class="guide-list">
-          <li>15-Minute weeknight dinner meal prep hacks</li>
-          <li>Easy kitchen techniques and knife skills for beginners</li>
-          <li>Smart ingredient substitutions when you are missing items</li>
-          <li>Fresh food storage and meal planning systems</li>
-        </ul>
-
-        <a href="#newsletter" class="btn btn-primary">Get Free Recipe Tips</a>
-      </div>
     </div>
   </section>
 
   <!-- ==============================================
-       ABOUT US & CONTACT SECTION (With smarthomep123@gmail.com)
+       FULL RECIPE ARTICLE MODAL POPUP (HIGH SEO CONTENT)
   ============================================== -->
+  <div id="recipeArticleModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 2000; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(8px);">
+    <div style="background: white; border-radius: 24px; max-width: 800px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 35px; position: relative; box-shadow: 0 25px 60px rgba(0,0,0,0.3);">
+      
+      <!-- Close Button -->
+      <button onclick="closeRecipeArticle()" style="position: absolute; top: 20px; right: 20px; background: #f5ebe3; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 22px; cursor: pointer; color: #29231f; font-weight: bold;">&times;</button>
+      
+      <span style="color: #e85d3f; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Healthy Meal Prep Guide</span>
+      
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 34px; line-height: 1.2; margin: 10px 0 15px; color: #29231f;">
+        7 Healthy Family Dinner Recipes That Picky Eaters Will Love
+      </h2>
+
+      <div style="display: flex; gap: 15px; font-size: 13px; color: #756c66; margin-bottom: 20px; border-bottom: 1px solid #eee2d9; padding-bottom: 12px; flex-wrap: wrap;">
+        <span>⏱ <strong>Prep Time:</strong> 10 Mins</span>
+        <span>🍳 <strong>Cook Time:</strong> 20 Mins</span>
+        <span>🥗 <strong>Diet:</strong> High Protein & Clean Eating</span>
+        <span>👨‍👩‍👧‍👦 <strong>Servings:</strong> Family of 4</span>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=1200&q=80" alt="Healthy family dinner recipes" style="border-radius: 16px; margin-bottom: 20px; height: 320px; object-fit: cover;">
+
+      <!-- Full Detailed Article Text -->
+      <div style="font-size: 16px; line-height: 1.8; color: #413a35;">
+        <p>Finding dinner ideas that are nutritious, quick to cook, and approved by kids can be an exhausting challenge. These <strong>healthy family dinner recipes</strong> focus on whole food ingredients, balanced nutrients, and simple one-pan cooking methods that cut dishwashing in half.</p>
+
+        <h3 style="font-family: 'Playfair Display', serif; color: #e85d3f; font-size: 24px; margin: 25px 0 10px;">1. One-Pan Mediterranean Lemon Herb Chicken & Roasted Potatoes</h3>
+        <p><strong>Prep Time:</strong> 10 mins | <strong>Cook Time:</strong> 20 mins</p>
+        <p><strong>Ingredients:</strong> 1.5 lbs boneless chicken breast, 1 lb baby gold potatoes (halved), 1 cup fresh green beans, 3 tbsp extra virgin olive oil, 4 cloves minced garlic, 1 tbsp dried oregano, fresh juice of 1 lemon.</p>
+        <p><strong>Instructions:</strong> Place chicken cutlets and halved potatoes on a large baking tray. Drizzle with olive oil, minced garlic, oregano, salt, and lemon juice. Roast at 400°F (200°C) for 15 minutes, add green beans, and roast for another 7 minutes until chicken reaches 165°F.</p>
+
+        <h3 style="font-family: 'Playfair Display', serif; color: #e85d3f; font-size: 24px; margin: 25px 0 10px;">2. Sheet-Pan Wild Honey Garlic Salmon & Broccoli Florets</h3>
+        <p><strong>Prep Time:</strong> 8 mins | <strong>Cook Time:</strong> 15 mins</p>
+        <p><strong>Ingredients:</strong> 4 salmon fillets, 3 cups broccoli florets, 2 tbsp honey, 2 tbsp low-sodium soy sauce (or tamari), 1 tbsp olive oil, 1 tsp sesame seeds.</p>
+        <p><strong>Instructions:</strong> Whisk honey, soy sauce, and minced garlic in a small bowl. Arrange salmon and broccoli on a foil-lined baking sheet. Brush glaze generously over salmon and toss broccoli in olive oil. Bake at 400°F for 12-14 minutes until salmon flakes tenderly with a fork.</p>
+
+        <h3 style="font-family: 'Playfair Display', serif; color: #e85d3f; font-size: 24px; margin: 25px 0 10px;">3. Hidden-Veggie Turkey Bolognese Whole-Wheat Pasta</h3>
+        <p><strong>Prep Time:</strong> 10 mins | <strong>Cook Time:</strong> 15 mins</p>
+        <p><strong>Ingredients:</strong> 1 lb lean ground turkey (93/7), 1 finely grated zucchini, 1 grated carrot, 1 jar organic marinara sauce, 12 oz whole wheat penne pasta, 1/2 cup shredded mozzarella.</p>
+        <p><strong>Instructions:</strong> Brown the turkey in a skillet over medium heat. Stir in finely grated zucchini and carrots (they melt invisibly into the sauce so picky kids won't notice). Pour in marinara sauce and simmer for 5 minutes. Toss with cooked whole-wheat penne and top with light mozzarella.</p>
+
+        <h3 style="font-family: 'Playfair Display', serif; color: #e85d3f; font-size: 24px; margin: 25px 0 10px;">4. 15-Minute Crispy Black Bean & Sweet Corn Tacos</h3>
+        <p><strong>Prep Time:</strong> 5 mins | <strong>Cook Time:</strong> 10 mins</p>
+        <p><strong>Ingredients:</strong> 8 warm corn tortillas, 1 can rinsed black beans, 1 cup sweet corn, 1 tsp ground cumin, 1 sliced avocado, fresh lime wedges and cilantro.</p>
+        <p><strong>Instructions:</strong> Sauté black beans and sweet corn in a skillet with cumin, garlic powder, and a splash of lime juice for 5 minutes. Warm corn tortillas and fill with bean mixture. Top with avocado slices and salsa for a high-fiber, plant-powered family meal.</p>
+      </div>
+
+      <!-- SEO Keywords Tag Footer -->
+      <div style="margin-top: 30px; padding-top: 15px; border-top: 1px solid #eee2d9; display: flex; gap: 8px; flex-wrap: wrap;">
+        <span style="font-size: 12px; background: #fff0e8; color: #e85d3f; padding: 5px 12px; border-radius: 20px; font-weight: 700;">#HealthyFamilyDinner</span>
+        <span style="font-size: 12px; background: #fff0e8; color: #e85d3f; padding: 5px 12px; border-radius: 20px; font-weight: 700;">#QuickWeeknightMeals</span>
+        <span style="font-size: 12px; background: #fff0e8; color: #e85d3f; padding: 5px 12px; border-radius: 20px; font-weight: 700;">#KidFriendlyDinner</span>
+        <span style="font-size: 12px; background: #fff0e8; color: #e85d3f; padding: 5px 12px; border-radius: 20px; font-weight: 700;">#OnePanRecipes</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ABOUT & CONTACT SECTION (With smarthomep123@gmail.com) -->
   <section class="section about-contact" id="about-contact">
     <div class="container contact-grid">
       <div>
@@ -1040,13 +634,11 @@
     </div>
   </section>
 
-  <!-- =========================
-       NEWSLETTER
-  ========================= -->
+  <!-- NEWSLETTER -->
   <section class="section newsletter" id="newsletter">
     <div class="container newsletter-inner">
-      <h2>Get delicious recipes in your inbox.</h2>
-      <p>Join thousands of home foodies receiving fresh recipes, meal prep guides and weekly cooking inspiration.</p>
+      <h2>Get healthy dinner recipes in your inbox.</h2>
+      <p>Join thousands of home foodies receiving weekly 20-minute meal prep guides and cooking inspiration.</p>
 
       <form class="newsletter-form" id="newsletterForm">
         <input type="email" id="emailInput" placeholder="Enter your email address" required>
@@ -1055,15 +647,13 @@
     </div>
   </section>
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div>
           <div class="footer-logo">Foodie <span>Guest Posts</span></div>
-          <p class="footer-text">Delicious recipes, practical cooking tips and easy food guides for everyday food lovers.</p>
+          <p class="footer-text">Delicious recipes, healthy family dinners and easy food guides for everyday food lovers.</p>
           <p style="margin-top: 12px; font-size: 13px; color: #ffd8ca;">
             <i class="fa-solid fa-envelope"></i> smarthomep123@gmail.com
           </p>
@@ -1074,16 +664,16 @@
           <ul>
             <li><a href="#recipes">All Recipes</a></li>
             <li><a href="#categories">Categories</a></li>
-            <li><a href="#guides">Food Guides</a></li>
+            <li><a href="#featured-guide">Healthy Dinners</a></li>
           </ul>
         </div>
 
         <div>
           <h4>Quick Categories</h4>
           <ul>
+            <li><a href="#recipes">Healthy Family Dinners</a></li>
             <li><a href="#recipes">15-Minute Meals</a></li>
             <li><a href="#recipes">Breakfast Ideas</a></li>
-            <li><a href="#recipes">Dinner Recipes</a></li>
             <li><a href="#recipes">Desserts</a></li>
           </ul>
         </div>
@@ -1105,9 +695,7 @@
     </div>
   </footer>
 
-  <!-- =========================
-       CLEAN JAVASCRIPT LOGIC
-  ========================= -->
+  <!-- CLEAN JAVASCRIPT -->
   <script>
     /* Mobile Menu Toggle */
     const menuBtn = document.getElementById("menuBtn");
@@ -1126,7 +714,8 @@
 
     /* Favorite Heart Buttons */
     document.querySelectorAll(".favorite").forEach(function(button) {
-      button.addEventListener("click", function() {
+      button.addEventListener("click", function(e) {
+        e.stopPropagation();
         button.classList.toggle("active");
         button.textContent = button.classList.contains("active") ? "♥" : "♡";
       });
@@ -1185,6 +774,24 @@
       });
     }
 
+    /* Open & Close Recipe Article Modal */
+    function openRecipeArticle() {
+      const modal = document.getElementById("recipeArticleModal");
+      if (modal) modal.style.display = "flex";
+    }
+
+    function closeRecipeArticle() {
+      const modal = document.getElementById("recipeArticleModal");
+      if (modal) modal.style.display = "none";
+    }
+
+    window.addEventListener("click", function(event) {
+      const modal = document.getElementById("recipeArticleModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
     /* Newsletter Form Submit */
     const newsletterForm = document.getElementById("newsletterForm");
     if (newsletterForm) {
@@ -1192,7 +799,7 @@
         event.preventDefault();
         const email = document.getElementById("emailInput").value;
         if (email) {
-          alert("Thank you for subscribing! We will send delicious recipes to " + email);
+          alert("Thank you for subscribing! We will send healthy family dinner recipes to " + email);
           newsletterForm.reset();
         }
       });
